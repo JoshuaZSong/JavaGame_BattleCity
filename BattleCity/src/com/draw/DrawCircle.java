@@ -8,7 +8,7 @@ public class DrawCircle extends JFrame{ //set up a frame
     private MyPanel mp = null;
     public static void main(String[] args){
         new DrawCircle();
-        System.out.println("exit");
+
     }
 
     public DrawCircle(){//constructor
@@ -18,6 +18,9 @@ public class DrawCircle extends JFrame{ //set up a frame
         this.add(mp);
         //size of the canvas
         this.setSize(400,300);
+        //exit when click "x"
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        System.out.println("exit");
         this.setVisible(true);//visible
     }
 }
