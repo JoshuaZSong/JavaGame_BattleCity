@@ -39,7 +39,19 @@ class MyPanel extends JPanel{
     public void paint(Graphics g) {
         super.paint(g);
         System.out.println("paint() is called");
+        //draw a line
+        //g.drawLine(int x1,int y1, int x2, int y2);
         //draw a circle
-        g.drawOval(10,10,100,100);
+        //g.drawOval(10,10,100,100);
+        //fill the Oval
+        //g.setColor(Color.red);
+        //g.fillOval(10,10,100,100);
+        //Get an image
+        //Image image = Toolkit.getDefaultToolkit().getImage(Panel.class.getResource(""))
+        //g.drawImage(image,10,10,175,211,this);
+        //Draw text
+        //g.setColor(Color.red);
+        //g.setFont(new Font("",Font.BOLD,50));
+        //g.drawString("",100,100);
     }
 }
