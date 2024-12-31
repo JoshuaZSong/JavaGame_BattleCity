@@ -24,12 +24,13 @@ public class BallMove extends JFrame {
 
 class MyPanel extends JPanel implements KeyListener {
 
-
+    int x = 10;
+    int y = 10;
 
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        g.fillOval(10, 10, 20, 20);
+        g.fillOval(x, y, 20, 20);
     }
 
     @Override
@@ -41,8 +42,15 @@ class MyPanel extends JPanel implements KeyListener {
     public void keyPressed(KeyEvent e) {
         System.out.println((char)e.getKeyCode() + " is pressed");
         if(e.getKeyCode() == KeyEvent.VK_DOWN){
-            
+            y++;
+        }else if(e.getKeyCode() == KeyEvent.VK_UP){
+            y--;
+        }else if(e.getKeyCode() == KeyEvent.VK_LEFT){
+            x--;
+        }else if(e.getKeyCode() == KeyEvent.VK_RIGHT){
+            x++;
         }
+        this.repaint();
     }
 
     @Override
