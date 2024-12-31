@@ -40,6 +40,9 @@ class MyPanel extends JPanel implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         System.out.println((char)e.getKeyCode() + " is pressed");
+        if(e.getKeyCode() == KeyEvent.VK_DOWN){
+            
+        }
     }
 
     @Override
