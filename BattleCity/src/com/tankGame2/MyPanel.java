@@ -94,12 +94,16 @@ public class MyPanel extends JPanel implements KeyListener {
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_W) {//up
             hero.setDirect(0);
+            hero.moveUp();
         } else if (e.getKeyCode() == KeyEvent.VK_D) {//right
             hero.setDirect(1);
+            hero.moveRight();
         } else if (e.getKeyCode() == KeyEvent.VK_S) {//down
             hero.setDirect(2);
+            hero.moveDown();
         } else if (e.getKeyCode() == KeyEvent.VK_A) {//left
             hero.setDirect(3);
+            hero.moveLeft();
         }
 
         this.repaint();

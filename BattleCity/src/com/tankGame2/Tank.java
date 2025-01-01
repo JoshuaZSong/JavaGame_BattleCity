@@ -4,6 +4,30 @@ public class Tank {
     private int x;
     private int y;
     private int direct;// 0: up 1: right 2:down 3:left
+    private int speed = 5;
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    //functions for moving to 4 directions
+    public void moveUp() {
+        y -= speed;
+    }
+
+    public void moveRight() {
+        x += speed;
+    }
+    public void moveDown() {
+        y += speed;
+    }
+    public void moveLeft() {
+        x -= speed;
+    }
 
     public Tank(int x, int y) {
         this.x = x;
