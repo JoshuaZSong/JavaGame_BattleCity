@@ -23,7 +23,7 @@ public class MyPanel extends JPanel {
 //        drawTank(hero.getX(), hero.getY(), g, 0, 0);
 
         //hero tank
-        drawTank(hero.getX() + 60, hero.getY(), g, 0, 1);
+        drawTank(hero.getX() + 60, hero.getY(), g, 3, 1);
     }
 
     /**
@@ -57,26 +57,26 @@ public class MyPanel extends JPanel {
                 g.fillOval(x + 9, y + 19, 20, 20);//tank's cabin
                 g.drawLine(x + 19, y + 30, x + 19, y);//tank's cannon
                 break;
-            case 1://going up
+            case 1://going right
                 g.fill3DRect(x, y, 60, 10, false);//tank's left track
-                g.fill3DRect(x , y + 30, 60, 10, false);//tank's right track
+                g.fill3DRect(x, y + 30, 60, 10, false);//tank's right track
                 g.fill3DRect(x + 10, y + 10, 40, 20, false);//tank's body
-                g.fillOval(x + 20, y + 10, 20, 20);//tank's cabin
-                g.drawLine(x + 19, y + 30, x + 19, y);//tank's cannon
+                g.fillOval(x + 19, y + 9, 20, 20);//tank's cabin
+                g.drawLine(x + 30, y + 19, x + 60, y + 19);//tank's cannon
                 break;
-            case 2://going up
-                g.fill3DRect(x, y, 60, 60, false);//tank's left track
-                g.fill3DRect(x + 30, y, 10, 60, false);//tank's right track
-                g.fill3DRect(x + 10, y + 10, 20, 40, false);//tank's body
-                g.fillOval(x + 9, y + 19, 20, 20);//tank's cabin
-                g.drawLine(x + 19, y + 30, x + 19, y);//tank's cannon
-                break;
-            case 3://going up
+            case 2://going down
                 g.fill3DRect(x, y, 10, 60, false);//tank's left track
                 g.fill3DRect(x + 30, y, 10, 60, false);//tank's right track
                 g.fill3DRect(x + 10, y + 10, 20, 40, false);//tank's body
                 g.fillOval(x + 9, y + 19, 20, 20);//tank's cabin
-                g.drawLine(x + 19, y + 30, x + 19, y);//tank's cannon
+                g.drawLine(x + 19, y + 30, x + 19, y + 60);//tank's cannon
+                break;
+            case 3://going left
+                g.fill3DRect(x, y, 60, 10, false);//tank's left track
+                g.fill3DRect(x , y+ 30, 60, 10, false);//tank's right track
+                g.fill3DRect(x + 10, y + 10, 40, 20, false);//tank's body
+                g.fillOval(x + 19, y + 9, 20, 20);//tank's cabin
+                g.drawLine(x + 30, y + 19, x, y+19);//tank's cannon
                 break;
             default:
         }
