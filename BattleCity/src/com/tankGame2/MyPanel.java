@@ -14,6 +14,7 @@ public class MyPanel extends JPanel implements KeyListener {
 
     public MyPanel() {
         hero = new Hero(100, 100);
+        hero.setSpeed(2);
     }
 
     @Override
