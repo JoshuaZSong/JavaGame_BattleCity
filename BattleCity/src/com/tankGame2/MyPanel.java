@@ -2,11 +2,13 @@ package com.tankGame2;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 /**
  * drawing panel
  */
-public class MyPanel extends JPanel {
+public class MyPanel extends JPanel implements KeyListener {
 
     Hero hero = null;
 
@@ -23,7 +25,7 @@ public class MyPanel extends JPanel {
 //        drawTank(hero.getX(), hero.getY(), g, 0, 0);
 
         //hero tank
-        drawTank(hero.getX() + 60, hero.getY(), g, 3, 1);
+        drawTank(hero.getX() + 60, hero.getY(), g, hero.getDirect(), 1);
     }
 
     /**
@@ -73,13 +75,38 @@ public class MyPanel extends JPanel {
                 break;
             case 3://going left
                 g.fill3DRect(x, y, 60, 10, false);//tank's left track
-                g.fill3DRect(x , y+ 30, 60, 10, false);//tank's right track
+                g.fill3DRect(x, y + 30, 60, 10, false);//tank's right track
                 g.fill3DRect(x + 10, y + 10, 40, 20, false);//tank's body
                 g.fillOval(x + 19, y + 9, 20, 20);//tank's cabin
-                g.drawLine(x + 30, y + 19, x, y+19);//tank's cannon
+                g.drawLine(x + 30, y + 19, x, y + 19);//tank's cannon
                 break;
             default:
         }
+
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_W) {//up
+            hero.setDirect(0);
+        } else if (e.getKeyCode() == KeyEvent.VK_D) {//right
+            hero.setDirect(1);
+        } else if (e.getKeyCode() == KeyEvent.VK_S) {//down
+            hero.setDirect(2);
+        } else if (e.getKeyCode() == KeyEvent.VK_A) {//left
+            hero.setDirect(3);
+        }
+
+        this.repaint();
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
 
     }
 }
