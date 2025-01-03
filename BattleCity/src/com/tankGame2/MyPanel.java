@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.Vector;
 
 /**
  * drawing panel
@@ -17,6 +18,9 @@ public class MyPanel extends JPanel implements KeyListener {
         hero = new Hero(100, 100);
         hero.setSpeed(2);
 
+        //enemy tanks
+        //using Vector - thread safe
+        Vector<Enemy> enemy = new Vector<>();
         enemy1 = new Enemy(50,50);
         enemy1.setSpeed(2);
         enemy2 = new Enemy(50,50);
@@ -33,6 +37,10 @@ public class MyPanel extends JPanel implements KeyListener {
 
         //hero tank
         drawTank(hero.getX() + 60, hero.getY(), g, hero.getDirect(), 1);
+
+        //enemy tanks
+        drawTank(enemy1.getX() + 60, enemy1.getY(), g, enemy1.getDirect(), 2);
+        drawTank(enemy2.getX() + 60, enemy2.getY(), g, enemy2.getDirect(), 2);
     }
 
     /**

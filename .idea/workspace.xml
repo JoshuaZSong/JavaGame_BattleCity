@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36f9ba8d-e159-43bb-950f-f8cefecc7d27" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/MyPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
