@@ -11,10 +11,16 @@ import java.awt.event.KeyListener;
 public class MyPanel extends JPanel implements KeyListener {
 
     Hero hero = null;
+    Enemy enemy1,enemy2 = null;
 
     public MyPanel() {
         hero = new Hero(100, 100);
         hero.setSpeed(2);
+
+        enemy1 = new Enemy(50,50);
+        enemy1.setSpeed(2);
+        enemy2 = new Enemy(50,50);
+        enemy1.setSpeed(3);
     }
 
     @Override
