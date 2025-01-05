@@ -12,19 +12,20 @@ import java.util.Vector;
 public class MyPanel extends JPanel implements KeyListener {
 
     Hero hero = null;
-    Enemy enemy1,enemy2 = null;
+    //enemy tanks
+    //using Vector - thread safe
+    Vector<Enemy> enemyTanks = new Vector<>();
+    int enemyTankSize = 3;
 
     public MyPanel() {
         hero = new Hero(100, 100);
         hero.setSpeed(2);
 
-        //enemy tanks
-        //using Vector - thread safe
-        Vector<Enemy> enemy = new Vector<>();
-        enemy1 = new Enemy(50,50);
-        enemy1.setSpeed(2);
-        enemy2 = new Enemy(50,50);
-        enemy1.setSpeed(3);
+        //Initial enemy tanks
+        for (int i = 0; i < enemyTankSize; i++) {
+            enemyTanks.add(new Enemy(100 * (i + 1), 0))
+        }
+
     }
 
     @Override
@@ -39,8 +40,10 @@ public class MyPanel extends JPanel implements KeyListener {
         drawTank(hero.getX() + 60, hero.getY(), g, hero.getDirect(), 1);
 
         //enemy tanks
-        drawTank(enemy1.getX() + 60, enemy1.getY(), g, enemy1.getDirect(), 2);
-        drawTank(enemy2.getX() + 60, enemy2.getY(), g, enemy2.getDirect(), 2);
+        for (int i = 0; i < enemyTanks.size(); i++) {
+            Enemy enemy = enemyTanks.get(i);
+            drawTank(enemy.getX() + 60, enemy.getY(), g, enemy.getDirect(), 0);
+        }
     }
 
     /**
