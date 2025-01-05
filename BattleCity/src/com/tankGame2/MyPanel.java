@@ -23,7 +23,9 @@ public class MyPanel extends JPanel implements KeyListener {
 
         //Initial enemy tanks
         for (int i = 0; i < enemyTankSize; i++) {
-            enemyTanks.add(new Enemy(100 * (i + 1), 0))
+            Enemy enemy = new Enemy(100 * (i + 1), 0);
+            enemy.setDirect(2);
+            enemyTanks.add(enemy);
         }
 
     }
