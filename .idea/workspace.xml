@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="36f9ba8d-e159-43bb-950f-f8cefecc7d27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/MyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleCity/src/com/tankGame3/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleCity/src/com/tankGame3/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleCity/src/com/tankGame3/MyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleCity/src/com/tankGame3/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankGame2/TankGame02.java" beforeDir="false" afterPath="$PROJECT_DIR$/BattleCity/src/com/tankGame3/TankGame03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankgame/Hero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankgame/MyPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankgame/Tank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BattleCity/src/com/tankgame/TankGame01.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +92,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BattleCity/src/com/tankGame2/MyPanel.java</url>
+          <url>file://$PROJECT_DIR$/BattleCity/src/com/tankGame3/MyPanel.java</url>
           <line>20</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>

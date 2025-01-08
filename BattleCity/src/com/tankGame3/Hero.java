@@ -1,4 +1,4 @@
-package com.tankGame2;
+package com.tankGame3;
 
 public class Hero extends Tank {
     
